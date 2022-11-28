@@ -433,11 +433,8 @@
 			}
 		},
 		{
-			"name": "js/ts variable.other.constant Customized",
-			"scope": [
-				"variable.other.constant",
-				"variable.other.constant.js"
-			],
+			"name": "Typescript meta type parameter",
+			"scope": ["meta.type.parameters.ts", "meta.objectliteral.ts"],
 			"settings": {
 				"foreground": "#D39745"
 			}
@@ -450,15 +447,15 @@
 			}
 		},
 		{
-			"name": "js variable readwrite 2",
-			"scope": "variable.other.constant.object.ts,variable.other.readwrite.ts",
+			"name": "ts/js/vue generic variable const",
+			"scope": ["variable.parameter.ts", "variable.other.constant", "variable.other.constant.ts", "variable.other.constant.object.ts","variable.other.readwrite.ts,","variable.other.constant.js"],
 			"settings": {
 				"foreground": "#f1f2f3"
 			}
 		},
 		{
 			"name": "js/ts json",
-			"scope": "support.constant.json",
+			"scope": ["entity.name.type.ts", "support.constant.json"],
 			"settings": {
 				"foreground": "#efc210"
 			}
