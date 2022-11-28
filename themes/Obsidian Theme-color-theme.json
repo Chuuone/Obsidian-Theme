@@ -210,13 +210,6 @@
         "foreground": "#efc210"
       }
     },
-    {
-      "name": "js/ts variable.other.constant",
-      "scope": "variable.other.constant",
-      "settings": {
-        "foreground": "#678cb1"
-      }
-    },
 	{
       "name": "Import module JS",
       "scope": [
@@ -229,19 +222,28 @@
     {
       "name": "js Flowtype",
       "scope": [
-        "support.type.type.flowtype"
+        "support.type.flowtype", "support.type.primitive"
       ],
       "settings": {
-        "foreground": "#f1f2f3"
+        "foreground": "#93C763"
       }
     },
     {
-      "name": "js Flow",
+      "name": "ts Flow",
       "scope": [
-        "support.type.primitive"
+		"meta.type.declaration.ts","support.type", "meta.field.declaration.ts"
       ],
       "settings": {
-        "foreground": "#678cb1"
+        "foreground": "#D39745"
+      }
+    },
+    {
+      "name": "ts Flow interface",
+      "scope": [
+        "entity.name.type.interface.ts", "meta.interface.ts", "meta.type.annotation.ts"
+      ],
+      "settings": {
+        "foreground": "#efc210"
       }
     },
     {
@@ -438,9 +440,16 @@
     },
     {
       "name": "js variable readwrite",
-      "scope": "variable.other.readwrite,meta.object-literal.key,support.variable.property,support.variable.object.process,support.variable.object.node",
+      "scope": "variable.other.readwrite,variable.other.object.property.ts,meta.object-literal.key,support.variable.property,support.variable.object.process,support.variable.object.node",
       "settings": {
         "foreground": "#f1f2f3"
+      }
+    },
+    {
+      "name": "js variable readwrite",
+      "scope": "variable.other.readwrite.ts",
+      "settings": {
+        "foreground": "#678CB1"
       }
     },
     {
@@ -1359,6 +1368,15 @@
 			"settings": {
 				"foreground": "#72aaca"
 			}
+		},
+		{
+		  "name": "js/ts variable.other.constant Customized",
+		  "scope": [
+			"variable.other.constant", "variable.other.constant.js", "meta.var-single-variable.expr.js"
+		  ],
+		  "settings": {
+			"foreground": "#D39745"
+		  }
 		}
 	],
 	"colors": {
