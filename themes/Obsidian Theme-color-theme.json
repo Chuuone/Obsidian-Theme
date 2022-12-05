@@ -9,6 +9,9 @@
 		"variable.constant": {
 			"foreground": "#efc210"
 		},
+		"variable.parameter": {
+			"foreground": "#678cb1"
+		},
 		"variable.defaultLibrary": {
 			"foreground": "#678cb1"
 		}
@@ -259,6 +262,15 @@
 			}
 		},
 		{
+			"name": "ts parameter",
+			"scope": [
+				"variable.parameter.ts"
+			],
+			"settings": {
+				"foreground": "#678cb1"
+			}
+		},
+		{
 			"name": "js template literals begin",
 			"scope": [
 				"keyword.other.template.begin"
@@ -444,11 +456,7 @@
 		{
 			"name": "ts/js/vue generic variable const",
 			"scope": [
-				"variable.parameter.ts",
-				"variable.other.constant",
-				"variable.other.constant.ts",
-				"variable.other.constant.js",
-				"variable.other.constant.object.ts",
+				"variable.other.property",
 				"variable.other.readwrite",
 				"variable.other.readwrite.ts",
 				"variable.other.object.property.ts",
@@ -478,6 +486,8 @@
 				"support.type.builtin.ts",
 				"keyword.operator.expression.instanceof",
 				"keyword.operator.new",
+				"variable.language.this.js",
+				"variable.language.this.ts",
 				"keyword.operator.ternary",
 				"keyword.operator.optional",
 				"keyword.operator.expression.keyof"
@@ -1054,22 +1064,15 @@
 				"meta.attribute.unrecognized.ref.html",
 				"keyword.control.conditional.vue",
 				"keyword.operator.ternary.ts",
+				"keyword.operator.in.ts",
+				"keyword.operator.expression.in.ts",
 				"keyword.control.loop.vue",
 				"expression.embbeded.vue",
 				"source.ts.embedded.html.vue",
 				"punctuation.definition.tag.begin.html.vue",
 				"punctuation.definition.tag.end.html.vue",
-				"entity.other.attribute-name.html.vue"
-			],
-			"settings": {
-				"foreground": "#42b883"
-			}
-		},
-		{
-			"name": "Vue/Typescript operators",
-			"scope": [
-				"keyword.operator.in.ts",
-				"keyword.operator.expression.in.ts"
+				"entity.other.attribute-name.html.vue",
+				"variable.language.ref.vue"
 			],
 			"settings": {
 				"foreground": "#42b883"
